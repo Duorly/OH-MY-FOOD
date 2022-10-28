@@ -1,0 +1,77 @@
+// Home restaurant menu card.
+// Card sizes and display evolve depending on the screen size.
+// One column on mobile with a min and max height (Otherwise grow too much
+// but not enough space to display differently)
+// 2 Columns on tablet onwards.
+.restaurant-menu-card{
+    display: block;
+    text-decoration:none; 
+    color:$color-black;  
+    border-radius: 25px;          
+    width: 100%;
+    height: 67vw;
+    min-height: 255px;
+    @media screen and (max-width: map-get($breakpoints, mobile)){
+        max-height: 380px;     
+    }
+    @media screen and (min-width: map-get($breakpoints, tablet)){            
+        width: 48%;        
+        height: 25vw; 
+    }
+    box-shadow: 0 0 8px 4px rgba($color-black, nth($blck-opct, 3)); 
+    margin-bottom: 1.25em; 
+    &:hover{
+        box-shadow: 0 0 8px 4px rgba($color-black, nth($blck-opct, 4));         
+    }                               
+    &__img{  
+        height: 71%;
+        @media screen and (min-width: map-get($breakpoints, tablet)){            
+            height: 75%; 
+        }
+        border-radius: 20px 20px 0px 0px;
+        background-size: cover;
+        background-repeat:no-repeat; 
+        position: relative;  
+        &--new{                
+            position: absolute;
+            top: 0.8em;
+            right: 0.8em;
+            padding: 0.56em 1.12em;
+            border-radius: 0.24em;            
+            $arg: rw-cnt-cnt-nw;
+            @include flxbox($flex-map, $arg);
+            background-color:$color-tertiary;
+            color: darken($color-tertiary, 37%);   
+            font-size: 0.8em;
+            font-weight:500;               
+        } 
+
+        @include home-card-img($home-card-img);
+    }
+    &__body{
+        $arg: rw-sb-cnt-nw;
+        @include flxbox($flex-map, $arg);
+        padding: 0 1em;
+        height: 29%;                       
+        @media screen and (min-width: map-get($breakpoints, tablet)){            
+            height: 25%; 
+        }
+        background-color: $color-white;              
+        border-radius: 0 0 25px 25px;          
+        &-txt{
+        $arg: cl-lft-fs-nw;
+        @include flxbox($flex-map, $arg);
+        & p{
+            &:nth-child(1){
+                margin-bottom: 0.5em;                   
+                font-size: 1.25em; 
+                font-weight: 900;
+                }                
+            }
+        }
+        &-icon{
+            $heart-translate-value: nth($heart-icon-merge,1);
+            @include heart-icon-transform($heart-translate-value);                                 
+        }
+    }        
+}
