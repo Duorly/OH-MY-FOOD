@@ -203,28 +203,87 @@ body .loader i {
   z-index: 1;
 }
 .menu #starter article:nth-of-type(1), .menu #dishes article:nth-of-type(1), .menu #dessert article:nth-of-type(1) {
-  animation: animationmenu 1s 0.1s;
+  animation: animationmenu 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  animation-delay: 0s;
 }
 .menu #starter article:nth-of-type(2), .menu #dishes article:nth-of-type(2), .menu #dessert article:nth-of-type(2) {
-  animation: animationmenu 1s 0.2s;
+  animation: animationmenu 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  animation-delay: 0.4s;
 }
 .menu #starter article:nth-of-type(3), .menu #dishes article:nth-of-type(3), .menu #dessert article:nth-of-type(3) {
-  animation: animationmenu 1s 0.3s;
+  animation: animationmenu 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  animation-delay: 0.8s;
 }
 .menu #starter article:nth-of-type(4), .menu #dishes article:nth-of-type(4), .menu #dessert article:nth-of-type(4) {
-  animation: animationmenu 1s 0.35s;
+  animation: animationmenu 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  animation-delay: 1.2s;
 }
 
 @keyframes animationmenu {
-  from {
-    transform: translateY(30%);
+  0% {
+    transform: translateY(50px);
     opacity: 0;
   }
-  to {
-    transform: translateY(0%);
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(0px);
     opacity: 1;
   }
 }
+.menuItem {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  animation: itemAppear 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  max-width: 100%;
+}
+
 @keyframes animationiconecheck {
   from {
     transform: rotate(0deg);
@@ -267,7 +326,7 @@ footer ul li:nth-of-type(4) {
 }
 
 header {
-  padding: 10px;
+  padding: 25px 10px;
 }
 header a {
   font-size: 20px;
@@ -276,7 +335,7 @@ header a {
 header p {
   font-family: "Shrikhand";
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 main {
@@ -297,11 +356,13 @@ main form input {
   background-color: rgb(234, 234, 234);
   justify-content: center;
   padding-left: 10px;
-  max-width: 100px;
+  max-width: 200px;
 }
 main form input::placeholder {
-  opacity: 0.7;
+  color: black;
+  font-size: 16px;
   font-weight: 600;
+  text-align: center;
 }
 main #location {
   background-color: rgb(246, 246, 246);
@@ -717,28 +778,87 @@ body .loader i {
   z-index: 1;
 }
 .menu #starter article:nth-of-type(1), .menu #dishes article:nth-of-type(1), .menu #dessert article:nth-of-type(1) {
-  animation: animationmenu 1s 0.1s;
+  animation: animationmenu 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  animation-delay: 0s;
 }
 .menu #starter article:nth-of-type(2), .menu #dishes article:nth-of-type(2), .menu #dessert article:nth-of-type(2) {
-  animation: animationmenu 1s 0.2s;
+  animation: animationmenu 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  animation-delay: 0.4s;
 }
 .menu #starter article:nth-of-type(3), .menu #dishes article:nth-of-type(3), .menu #dessert article:nth-of-type(3) {
-  animation: animationmenu 1s 0.3s;
+  animation: animationmenu 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  animation-delay: 0.8s;
 }
 .menu #starter article:nth-of-type(4), .menu #dishes article:nth-of-type(4), .menu #dessert article:nth-of-type(4) {
-  animation: animationmenu 1s 0.35s;
+  animation: animationmenu 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  animation-delay: 1.2s;
 }
 
 @keyframes animationmenu {
-  from {
-    transform: translateY(30%);
+  0% {
+    transform: translateY(50px);
     opacity: 0;
   }
-  to {
-    transform: translateY(0%);
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(0px);
     opacity: 1;
   }
 }
+.menuItem {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  animation: itemAppear 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  max-width: 100%;
+}
+
 @keyframes animationiconecheck {
   from {
     transform: rotate(0deg);
@@ -781,7 +901,7 @@ footer ul li:nth-of-type(4) {
 }
 
 header {
-  padding: 10px;
+  padding: 25px 10px;
 }
 header a {
   font-size: 20px;
@@ -790,7 +910,7 @@ header a {
 header p {
   font-family: "Shrikhand";
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 img {
@@ -836,7 +956,7 @@ body .main-menu .menu > h1 {
   padding: 0px 20px 40px 20px;
 }
 body .main-menu .menu #starter, body .main-menu .menu #dishes, body .main-menu .menu #dessert {
-  margin: 0px 15px;
+  margin: 0px 15px 50px 15px;
 }
 body .main-menu .menu #starter h2, body .main-menu .menu #dishes h2, body .main-menu .menu #dessert h2 {
   font-weight: 400;
@@ -866,7 +986,7 @@ body .main-menu .menu #starter article .detail-price, body .main-menu .menu #dis
 }
 body .main-menu .menu #starter article .detail-price .detail, body .main-menu .menu #dishes article .detail-price .detail, body .main-menu .menu #dessert article .detail-price .detail {
   flex-basis: 90%;
-  padding: 10px 0px 10px 5px;
+  padding: 10px 0px 10px 10px;
   white-space: nowrap;
   overflow: hidden;
 }
